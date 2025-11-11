@@ -24,6 +24,26 @@
       max-width: 1400px;
       margin: 0 auto;
       padding: 40px 20px;
+      position: relative;
+    }
+    
+    .profile-image {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      z-index: 100;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .profile-image:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.4);
     }
     
     .header {
@@ -330,7 +350,7 @@
   <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
  </head>
  <body>
-  <div class="container">
+  <div class="container"><img src="https://combative-fuchsia-1imigf7ecu.edgeone.app/photo_2025-10-30_22-59-20.jpg" alt="Profile" class="profile-image" onerror="this.style.display='none';">
    <div class="header">
     <h1 id="page-title">دليل أزرار جهاز السونار الطبي</h1>
     <p id="subtitle">اضغط على أي زر لمعرفة وظيفته</p>
@@ -831,8 +851,8 @@
       },
       probe: {
         name: "Probe Select",
-        description: "اختيار البروب - يختار نوع البروب المناسب للفحص (linear , convex , phased array). كل بروب مصمم لفحص أعضاء معينة بترددات مختلفة.",
-        buttonLabel: "PROBE",
+description: "اختيار البروب - يختار نوع البروب المناسب للفحص (linear , convex , phased array). كل بروب مصمم لفحص أعضاء معينة بترددات مختلفة.",
+       buttonLabel: "PROBE",
         iconPath: "M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z",
         screenEffect: `<rect width="200" height="150" fill="#000"/><text x="50" y="50" fill="#0ff" font-size="14">PROBE: LINEAR</text><text x="50" y="75" fill="#888" font-size="12">Frequency: 7.5MHz</text><text x="50" y="95" fill="#888" font-size="12">Depth: 6cm</text>`
       },
@@ -1253,5 +1273,5 @@
 
     updateUI();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99ce6f511128df5f',t:'MTc2Mjg3MDg3My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99ce904bc788d0f3',t:'MTc2Mjg3MjIyNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
